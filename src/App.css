@@ -76,10 +76,70 @@ nav li a {
   }
 }
 
+/* Travel Convenience Section */
+.travel-convenience {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.travel-convenience h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.travel-convenience h3 {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Travel Card Container */
+.travel-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Travel Card Styling */
+.travel-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.travel-card-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #424040; /* Example icon color */
+}
+
+.travel-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.travel-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.travel-card li {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 5px;
+}
+
 /* Image Gallery Styling */
 .image-gallery {
   padding: 40px 20px;
-  background-color: white;
+  background-color: #f4f4f4;
 }
 
 .image-gallery h2 {
@@ -105,7 +165,7 @@ nav li a {
 
 /* Footer Styling */
 .footer {
-  background-color: white;
+  background-color: #333;
   color: white;
   padding: 20px 0;
   margin-top: 20px;
