@@ -1,13 +1,12 @@
-/* App Styling */
+/* General Styling */
 .App {
   text-align: center;
   font-family: 'Poppins', sans-serif;
   background-color: white;
 }
 
-/* Header Styling */
 .header {
-  background-color: #f8f9fa; /* Example background color */
+  background-color: #f8f9fa;
   padding: 20px 50px;
 }
 
@@ -16,7 +15,6 @@
   height: 90px;
 }
 
-/* Flexbox Layout for Header */
 .container {
   display: flex;
   justify-content: space-between;
@@ -36,7 +34,7 @@ nav li {
 
 nav li a {
   text-decoration: none;
-  color: #000; /* Example text color */
+  color: #000;
 }
 
 /* Heading and Subheading Animations */
@@ -49,11 +47,10 @@ nav li a {
 .subheading {
   font-size: 1.5em;
   margin-top: 10px;
-  opacity: 0; /* Initially hide the subheading */
-  animation: easeInSubheading 1s ease-in 1s forwards; /* Start after heading animation */
+  opacity: 0;
+  animation: easeInSubheading 1s ease-in 1s forwards;
 }
 
-/* Keyframes for Animations */
 @keyframes easeInHeading {
   from {
     opacity: 0;
@@ -111,12 +108,18 @@ nav li a {
   padding: 20px;
   width: 250px;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.travel-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .travel-card-icon {
   font-size: 2em;
   margin-bottom: 10px;
-  color: #424040; /* Example icon color */
+  color: #424040;
 }
 
 .travel-card h3 {
