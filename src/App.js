@@ -1,19 +1,20 @@
-// App.jsx
 import React from 'react';
 import './App.css';
 import Header from './Components/Header';
 import ImageGallery from './Components/ImageGallery';
 import Travel from './Components/Travel';
 import { faPlaneDeparture, faCar, faRoad, faTrain } from '@fortawesome/free-solid-svg-icons';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <h1 className="heading">The Dilli House</h1>
+      <ImageGallery />
+      <h1 className="heading">DILLI HOUSE</h1>
       <h3 className="subheading">For All Special Retreats</h3>
       <TravelConvenience />
-      <ImageGallery />
     </div>
   );
 }
@@ -27,12 +28,9 @@ function TravelConvenience() {
   const carPoints = [
     "5 hours from Delhi NCR",
     "2 hours away from Shimla",
-    "2 hours away from Chail",
     "1 hour from Chandigarh",
     "30 minutes from Kasauli",
-    "30 minutes from Solan",
-    "20 minutes away from Barog"
-  ];
+    "30 minutes from Solan"  ];
 
   const trainPoints = [
     "Near the Kalka-Shimla Toy Train Station Of Dharampur" ];

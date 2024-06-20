@@ -1,22 +1,28 @@
-/* App Styling */
+/* General Styling */
 .App {
   text-align: center;
-  font-family: 'Poppins', sans-serif;
   background-color: white;
+  font-family: 'Alike', serif;
 }
 
-/* Header Styling */
 .header {
-  background-color: #f8f9fa; /* Example background color */
+  background-color: #f8f9fa;
   padding: 20px 50px;
 }
 
 .logo {
   width: 200px;
   height: 90px;
+  position: absolute;
+  left: 2rem;
+  top: 0;
 }
 
-/* Flexbox Layout for Header */
+.nav-links {
+  position: absolute;
+  right: 5rem; /* Adjusted to use 'right' instead of 'margin-right' */
+  top: 2rem; /* Ensures the links are aligned at the top of the header */
+}
 .container {
   display: flex;
   justify-content: space-between;
@@ -36,24 +42,30 @@ nav li {
 
 nav li a {
   text-decoration: none;
-  color: #000; /* Example text color */
+  color: #000;
 }
 
 /* Heading and Subheading Animations */
 .heading {
   font-size: 2.5em;
-  margin-top: 20px;
+  margin-top: 3rem;
   animation: easeInHeading 1s ease-in;
+  font-family: 'Alike',serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .subheading {
   font-size: 1.5em;
-  margin-top: 10px;
-  opacity: 0; /* Initially hide the subheading */
-  animation: easeInSubheading 1s ease-in 1s forwards; /* Start after heading animation */
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: easeInSubheading 1s ease-in 1s forwards;
+  font-family: 'Alike',serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* Keyframes for Animations */
 @keyframes easeInHeading {
   from {
     opacity: 0;
@@ -91,7 +103,7 @@ nav li a {
 .travel-convenience h3 {
   font-size: 1.5em;
   margin-bottom: 30px;
-  color: #555;
+  color: black;
 }
 
 /* Travel Card Container */
@@ -105,18 +117,24 @@ nav li a {
 .travel-card {
   background-color: white;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 18px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 10px;
   padding: 20px;
   width: 250px;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.travel-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .travel-card-icon {
   font-size: 2em;
   margin-bottom: 10px;
-  color: #424040; /* Example icon color */
+  color: #424040;
 }
 
 .travel-card h3 {
@@ -132,36 +150,71 @@ nav li a {
 
 .travel-card li {
   font-size: 1em;
-  color: #666;
+  color: #000000;
   margin-bottom: 5px;
 }
 
 /* Image Gallery Styling */
+.custom-carousel{
+  position: absolute;
+  display: flex;
+}
+
 .image-gallery {
   padding: 40px 20px;
   background-color: #f4f4f4;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .image-gallery h2 {
   margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.custom-carousel .carousel-item video,
+.custom-carousel .carousel-item img {
+  max-width: 100%; /* Limits the maximum width */
+  max-height: 720px; /* Limits the maximum height */
+  width: auto; /* Ensures aspect ratio is maintained */
+  height: auto; /* Ensures aspect ratio is maintained */
+  object-fit: cover; /* Cover the entire container */
+  display: block; /* Ensures proper display as block elements */
+  margin: 0 auto;
+  margin-top: 3rem; /* Center horizontally */
 }
 
-.image-container {
-  margin: 10px;
+
+.custom-carousel .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  position: absolute; 
+  bottom: 0;
+  padding: 10px;
+  color: white;
+  left: 0;
+  right: 0;
 }
 
-.image-container img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
+.custom-carousel .carousel-caption h3,
+.custom-carousel .carousel-caption p {
+  margin: 0; 
 }
+
+
+
+
+.maps {
+  width: 75rem;
+  height: 25rem;
+  position: relative;
+  margin-top:20rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 /* Footer Styling */
 .footer {
