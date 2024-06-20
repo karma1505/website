@@ -18,11 +18,14 @@
   top: 0;
 }
 
+<<<<<<< HEAD
 .nav-links {
   position: absolute;
   right: 5rem; /* Adjusted to use 'right' instead of 'margin-right' */
   top: 2rem; /* Ensures the links are aligned at the top of the header */
 }
+=======
+>>>>>>> 05e1cd92ebb73bbedff7f5ce7e1a2048fd1f2283
 .container {
   display: flex;
   justify-content: space-between;
@@ -57,6 +60,7 @@ nav li a {
 
 .subheading {
   font-size: 1.5em;
+<<<<<<< HEAD
   margin-top: 1rem;
   margin-bottom: 2rem;
   opacity: 0;
@@ -64,6 +68,11 @@ nav li a {
   font-family: 'Alike',serif;
   font-weight: 400;
   font-style: normal;
+=======
+  margin-top: 10px;
+  opacity: 0;
+  animation: easeInSubheading 1s ease-in 1s forwards;
+>>>>>>> 05e1cd92ebb73bbedff7f5ce7e1a2048fd1f2283
 }
 
 @keyframes easeInHeading {
@@ -162,9 +171,13 @@ nav li a {
 
 .image-gallery {
   padding: 40px 20px;
+<<<<<<< HEAD
   background-color: #f4f4f4;
   max-width: 1000px;
   margin: 0 auto;
+=======
+  background-color: #ffffff;
+>>>>>>> 05e1cd92ebb73bbedff7f5ce7e1a2048fd1f2283
 }
 
 .image-gallery h2 {
@@ -202,9 +215,12 @@ nav li a {
   margin: 0; 
 }
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 05e1cd92ebb73bbedff7f5ce7e1a2048fd1f2283
 .maps {
   width: 75rem;
   height: 25rem;
