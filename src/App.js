@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Components/Header';
 import ImageGallery from './Components/ImageGallery';
 import Travel from './Components/Travel';
+import Rooms from './Components/Rooms';
 import { faPlaneDeparture, faCar, faRoad, faTrain } from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,6 +15,7 @@ function App() {
       <ImageGallery />
       <h1 className="heading">DILLI HOUSE</h1>
       <h3 className="subheading">For All Special Retreats</h3>
+      <Rooms />
       <TravelConvenience />
     </div>
   );
