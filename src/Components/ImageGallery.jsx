@@ -12,7 +12,9 @@ function ImageGallery() {
   const carouselRef = useRef(null);
 
   const handleVideoEnded = () => {
-    carouselRef.current.next();
+    if (carouselRef.current) {
+      carouselRef.current.next();
+    }
   };
 
   return (
@@ -23,7 +25,6 @@ function ImageGallery() {
           src={videovilla}
           alt="The Dilli House Experience"
           autoPlay
-          loop
           muted
           onEnded={handleVideoEnded}
         />
@@ -36,7 +37,7 @@ function ImageGallery() {
         />
         <Carousel.Caption>
           <h3>Your Himalayan Escape</h3>
-          <p>Welcome To The Dilli House</p>
+          <p className='carouselpara'>Welcome To The Dilli House</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -47,7 +48,7 @@ function ImageGallery() {
         />
         <Carousel.Caption>
           <h3>Unlock Your Creative Mind</h3>
-          <p>Try Your Hand At Poetry Or Painting</p>
+          <p className='carouselpara'>Try Your Hand At Poetry Or Painting</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -58,7 +59,7 @@ function ImageGallery() {
         />
         <Carousel.Caption>
           <h3>Breathtaking Views</h3>
-          <p>Perfect For Your Socials</p>
+          <p className='carouselpara'>Perfect For Your Socials</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -69,7 +70,7 @@ function ImageGallery() {
         />
         <Carousel.Caption>
           <h3>Dine At The Royal Kitchen Of Dilli House</h3>
-          <p>With Ranging From Over 7 Different Cuisine Styles</p>
+          <p className='carouselpara'>With Ranging From Over 7 Different Cuisine Styles</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -80,7 +81,7 @@ function ImageGallery() {
         />
         <Carousel.Caption>
           <h3>Evening Pool View</h3>
-          <p>Experience the serene ambiance of our pool at the golden hour.</p>
+          <p className='carouselpara'>Experience the serene ambiance of our pool at the golden hour.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

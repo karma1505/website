@@ -201,9 +201,10 @@ nav li a {
 }
 
 /* Image Gallery Styling */
-.custom-carousel{
-  position: absolute;
+.custom-carousel {
+  position: relative; /* Changed to relative to keep it within the normal flow */
   display: flex;
+  flex-direction: column; /* Ensures items are stacked vertically */
 }
 
 .image-gallery {
@@ -213,10 +214,8 @@ nav li a {
   margin: 0 auto;
 }
 
-.image-gallery h2 {
-  margin-bottom: 20px;
-  font-size: 2em;
-  color: #333;
+.custom-carousel .carousel-item {
+  transition: opacity 1s ease-in-out;
 }
 
 .custom-carousel .carousel-item video,
@@ -228,25 +227,31 @@ nav li a {
   object-fit: cover; /* Cover the entire container */
   display: block; /* Ensures proper display as block elements */
   margin: 0 auto;
-  margin-top: 3rem;
 }
-
 
 .custom-carousel .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   position: absolute; 
-  bottom: 0;
-  padding: 10px;
+  bottom: 20px; /* Changed to add some space from the bottom */
+  padding: 1rem;
   color: white;
   left: 0;
   right: 0;
+  max-width: 40%; /* Ensure it doesn't span the entire width */
+  margin: 0 auto; /* Center align the caption */
 }
 
 .custom-carousel .carousel-caption h3,
 .custom-carousel .carousel-caption p {
   margin: 0; 
 }
+
+.carouselpara {
+  font-size: 1em;
+  margin-top: 1rem; /* Reduced margin for better spacing */
+}
+
 
 .maps {
   width: 75rem;
