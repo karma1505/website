@@ -18,7 +18,7 @@ function ImageGallery() {
   };
 
   return (
-    <Carousel className="custom-carousel" ref={carouselRef} interval={null}>
+    <Carousel className="custom-carousel" ref={carouselRef} interval={2000}>
       <Carousel.Item>
         <video
           className="d-block w-100"

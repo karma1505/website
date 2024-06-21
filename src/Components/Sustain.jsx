@@ -1,9 +1,9 @@
 import React from 'react';
-import "../App.css"; // Importing CSS file for styling
+import "../App.css"; 
 
-const Story = () => {
+const Sustain = () => {
     return (
-        <div className="story-container">
+        <div className="sustain-container">
             <h1>The Adventure of Lorem Ipsum</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia dolor ut magna consequat, id rutrum purus viverra. Pellentesque at venenatis eros. Fusce luctus eget velit eget scelerisque. Nulla facilisi. Nulla lacinia, risus id dictum pulvinar, elit nisi hendrerit dui, nec fringilla magna purus sed risus. Fusce tincidunt nunc in lorem auctor, et consequat lorem dictum. Nulla ultrices bibendum dui, a bibendum tortor bibendum id. Donec suscipit tincidunt purus, in sodales orci posuere non. Mauris vitae purus orci.
@@ -18,4 +18,4 @@ const Story = () => {
     );
 }
 
-export default Story;
+export default Sustain;

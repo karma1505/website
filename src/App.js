@@ -4,19 +4,39 @@ import Header from './Components/Header';
 import ImageGallery from './Components/ImageGallery';
 import Travel from './Components/Travel';
 import Rooms from './Components/Rooms';
+import Story from './Components/Story';
+import Sustain from './Components/Sustain';
 import { faPlaneDeparture, faCar, faRoad, faTrain } from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { Element } from 'react-scroll'; // Import Element from react-scroll for defining scrollable sections
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <ImageGallery />
-      <h1 className="heading">DILLI HOUSE</h1>
-      <h3 className="subheading">For All Special Retreats</h3>
-      <Rooms />
-      <TravelConvenience />
+      
+      <Element name="top" className="element">
+        <ImageGallery />
+        <h1 className="heading">DILLI HOUSE</h1>
+        <h3 className="subheading">For All Special Retreats</h3>
+      </Element>
+      
+      <Element name="rooms" className="element">
+        <Rooms />
+      </Element>
+      
+      <Element name="travel" className="element">
+        <TravelConvenience />
+      </Element>
+      
+      <Element name="story" className="element">
+        <Story />
+      </Element>
+      
+      <Element name="sustain" className="element">
+        <Sustain />
+      </Element>
+      
     </div>
   );
 }
@@ -32,10 +52,12 @@ function TravelConvenience() {
     "2 hours away from Shimla",
     "1 hour from Chandigarh",
     "30 minutes from Kasauli",
-    "30 minutes from Solan"  ];
+    "30 minutes from Solan"
+  ];
 
   const trainPoints = [
-    "Near the Kalka-Shimla Toy Train Station Of Dharampur" ];
+    "Near the Kalka-Shimla Toy Train Station Of Dharampur"
+  ];
 
   const highwayPoints = [
     "Well connected with the Chandigarh-Shimla 4 lane highway"

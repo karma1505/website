@@ -4,46 +4,54 @@
   background-color: white;
   font-family: 'Alike', serif;
 }
+.fixed-header {
+  position: fixed;  
+  top: 0;            
+  left: 0;            
+  width: 100%;       
+  z-index: 100;
+}
 
-.header {
-  background-color: #f8f9fa;
-  padding: 20px 50px;
+.background{
+  background-color: #ffffff;  
 }
 
 .logo {
   width: 200px;
-  height: 90px;
+  height: 80px;
   position: absolute;
-  left: 2rem;
+  left: 1rem;
   top: 0;
 }
 
-.nav-links {
-  position: absolute;
-  right: 5rem; /* Adjusted to use 'right' instead of 'margin-right' */
-  top: 2rem; /* Ensures the links are aligned at the top of the header */
-}
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.navbar {
+  background-color: #000000;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.navbar-nav .nav-item {
+  margin-right: 2rem; /* Adjust right margin between nav items */
+}
+.navbar-nav .nav-link {
+  color: #000000; /* Link color */
+  font-size: 16px; /* Font size */ /* Space between links */
 }
 
-nav li {
-  margin-left: 20px;
+.navbar-nav .nav-link:hover {
+  color: #000000; /* Hover color (blue) */
 }
 
-nav li a {
-  text-decoration: none;
-  color: #000;
+.navbar-toggler {
+  border: none; /* Removes border from toggler */
 }
+
+.navbar-toggler-icon {
+  background-color: #333333; /* Toggler icon color */
+}
+
+.navbar-toggler:focus {
+  outline: none; /* Removes focus outline */
+}
+
 
 /* Heading and Subheading Animations */
 .heading {
@@ -91,7 +99,7 @@ nav li a {
 .rooms-section {
   width: 80%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px;
 }
 
 .room-card {
@@ -204,7 +212,8 @@ nav li a {
 .custom-carousel {
   position: relative; /* Changed to relative to keep it within the normal flow */
   display: flex;
-  flex-direction: column; /* Ensures items are stacked vertically */
+  flex-direction: column;
+  margin-top: 4.5rem; /* Ensures items are stacked vertically */
 }
 
 .image-gallery {
@@ -250,6 +259,41 @@ nav li a {
 .carouselpara {
   font-size: 1em;
   margin-top: 1rem; /* Reduced margin for better spacing */
+}
+
+
+/* Components/Story.css */
+.story-container {
+  max-width: 800px;
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.story-container h1 {
+  text-align: center;
+}
+
+/* Components/Story.css */
+.sustain-container {
+  max-width: 800px;
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.sustain-container h1 {
+  text-align: center;
 }
 
 
