@@ -1,7 +1,11 @@
 import React, { useRef } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import pool from '../Media/pool.jpg';
+import nameplate1 from '../Media/nameplate.JPG';
+import droneshoot from '../Media/droneshot.JPG';
+import downstairs from '../Media/downstairs.JPG';
 import videovilla from '../Media/videovilla.mp4';
+import kitchen from '../Media/kitchen.JPG';
 import "../App.css";
 
 function ImageGallery() {
@@ -27,12 +31,45 @@ function ImageGallery() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={pool}
-          alt="Spacious pool area"
+          src={nameplate1}
+          alt="The Dilli House"
         />
         <Carousel.Caption>
-          <h3>Spacious Pool Area</h3>
-          <p>Relax and unwind in our spacious pool area.</p>
+          <h3>Your Himalayan Escape</h3>
+          <p>Welcome To The Dilli House</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={downstairs}
+          alt="The Dilli House"
+        />
+        <Carousel.Caption>
+          <h3>Unlock Your Creative Mind</h3>
+          <p>Try Your Hand At Poetry Or Painting</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={droneshoot}
+          alt="The Dilli House"
+        />
+        <Carousel.Caption>
+          <h3>Breathtaking Views</h3>
+          <p>Perfect For Your Socials</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={kitchen}
+          alt="The Dilli House"
+        />
+        <Carousel.Caption>
+          <h3>Dine At The Royal Kitchen Of Dilli House</h3>
+          <p>With Ranging From Over 7 Different Cuisine Styles</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -43,7 +80,7 @@ function ImageGallery() {
         />
         <Carousel.Caption>
           <h3>Evening Pool View</h3>
-          <p>Experience the serene ambiance of our pool at night.</p>
+          <p>Experience the serene ambiance of our pool at the golden hour.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

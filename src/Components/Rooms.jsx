@@ -1,46 +1,41 @@
 import React from 'react';
-import pool from '../Media/pool.jpg'; // Placeholder image
+import goldenImg from '../Media/golden.jpg';
+import silverImg from '../Media/silver.jpg';
+import bronzeImg from '../Media/bronze.jpg';
+
 import "../App.css";
+
 
 const Rooms = () => {
   return (
     <div className="rooms-section">
-      <h2>Our Rooms</h2>
+      <h2>Our  Rooms</h2>
       <div className="room-card">
-        <img src={pool} alt="Golden Bedroom" className="room-image" />
+        <img src={goldenImg} alt="Golden Bedroom with Balcony Overlooking Himalayas" className="room-golden" />
         <div className="room-details">
-          <h3>The Golden Bedroom</h3>
+          <h2>The Golden Bedroom</h2>
           <p>
-            The Master’s Bedroom offers a beautiful view of the Reserved Forest, a lucky guest may be able to spot the varied wildlife of the Himalayas.
-            The name Golden Bedroom is not only relevant to the plush Golden interiors, but also to the Sunshine that illuminates the room during winters,
-            you would have heard of bone chilling winter, how about therapeutic bone warming sunbaths on the lounger in this room.
-            The connected en suite houses the Couple Jacuzzi for a relaxing warm massage in the tranquil environs of the Jungle Surrounded Villa.
+          Luxuriate in the Golden Bedroom, featuring plush interiors and breathtaking Himalayan views. Experience the warmth of winter sunbathing and unwind in the en suite jacuzzi, all within your private, jungle-surrounded villa. Perfect for a luxurious retreat in the Himalayas.
           </p>
         </div>
       </div>
 
       <div className="room-card">
-        <img src={pool} alt="Silver Bedroom" className="room-image" />
+        <img src={silverImg} alt="Silver Bedroom with Modern Chic Ambiance" className="room-silver" />
         <div className="room-details">
-          <h3>The Silver Bedroom</h3>
+          <h2>The Silver Bedroom</h2>
           <p>
-            The Place for youth, the subtle selection of Grey and Black elements in the room give it a chic and luxurious vibe.
-            The beaming turquoise recliner stands out for those looking for a hugging chair to read a book, scroll through reels or enjoy their favorite series.
-            The Silver Bedroom has a Ninety-Degree view, the lush green valley on one side and the Pool Deck and Roof in the front.
-            The room has been decorated to create an immersion into luxury, while providing one a perfect place to “Chill”.
-            If you are a writer or a poet the teak wood study table won’t let your creativity rest and the only noise you will be hearing will be of your thoughts.
+            The chic and luxurious Silver Bedroom, perfect for the young at heart. With elegant grey and black decor, a cozy turquoise recliner for relaxation, and a stunning panoramic view of the lush valley and pool deck. Ideal for writers and poets, the room features a teak wood study table. Unwind in ultimate comfort and enjoy the tranquil sounds of nature.
           </p>
         </div>
       </div>
 
       <div className="room-card">
-        <img src={pool} alt="Bronze Bedroom" className="room-image" />
+        <img src={bronzeImg} alt="The Bronze Bedroom: Privacy and Convenience" className="room-bronze" />
         <div className="room-details">
-          <h3>The Bronze Bedroom</h3>
+          <h2>The Bronze Bedroom</h2>
           <p>
-            Located on the ground floor the room provides unmatched privacy at the property, the room has wonderful views of the green bleeding valley,
-            with the Drawing Room right outside. Perfect for guests who want to have a party without disturbing others on the property.
-            The room houses a Sofa-Cum-Bed perfect for 2 more people to sleep on, a late night get together can turn into a perfect slumber or pajama party in this room.
+          Located on the ground floor, the Bronze Bedroom is the ultimate private party pad with stunning valley views. Just outside, the Drawing Room is perfect for socializing without disturbing others. This room features a cozy sofa-cum-bed for two, ideal for late-night hangouts or pajama parties. Enjoy the vibe, soak in the views, and make unforgettable memories in your exclusive space.
           </p>
         </div>
       </div>
