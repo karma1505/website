@@ -3,17 +3,20 @@
   text-align: center;
   background-color: white;
   font-family: 'Alike', serif;
-}
-.fixed-header {
-  position: fixed;  
-  top: 0;            
-  left: 0;            
-  width: 100%;       
-  z-index: 100;
+  font-weight: 500;
+  background-color: #f9e5a;
 }
 
-.background{
-  background-color: #ffffff;  
+.navbar {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1rem 1rem;
+  display: flex;
+  /* Aligns items to the right */
 }
 
 .logo {
@@ -21,44 +24,37 @@
   height: 80px;
   position: absolute;
   left: 1rem;
-  top: 0;
+  top: 50%; /* Adjust as necessary */
+  transform: translateY(-50%);
 }
 
-.navbar {
-  background-color: #000000;
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 1.2rem; /* Adjust padding as per design */
+  flex-grow: 1; /* Takes up remaining space */
+  justify-content: flex;
+  margin-left: 26rem; /* Aligns items to the right */
 }
 
-.navbar-nav .nav-item {
-  margin-right: 2rem; /* Adjust right margin between nav items */
-}
-.navbar-nav .nav-link {
-  color: #000000; /* Link color */
-  font-size: 16px; /* Font size */ /* Space between links */
-}
-
-.navbar-nav .nav-link:hover {
-  color: #000000; /* Hover color (blue) */
+.nav-link {
+  color: #000;
+  font-size: 16px;
+  margin-left: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.navbar-toggler {
-  border: none; /* Removes border from toggler */
+.nav-link:hover {
+  color: #333;
 }
 
-.navbar-toggler-icon {
-  background-color: #333333; /* Toggler icon color */
-}
-
-.navbar-toggler:focus {
-  outline: none; /* Removes focus outline */
-}
-
-
-/* Heading and Subheading Animations */
 .heading {
   font-size: 3rem;
   margin-top: 2.5rem;
   animation: easeInHeading 1s ease-in;
-  font-family: 'Alike',serif;
+  font-family: 'Alike', serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -69,7 +65,7 @@
   margin-bottom: 2rem;
   opacity: 0;
   animation: easeInSubheading 1s ease-in 1s forwards;
-  font-family: 'Alike',serif;
+  font-family: 'Alike', serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -110,6 +106,7 @@
   border: 1px solid #ddd;
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #453636;
 }
 
 .room-card:nth-child(even) {
@@ -129,17 +126,29 @@
   padding: 20px;
 }
 
-.room-details h3 {
+.golden-text {
+  color: #ffd700; /* Golden color */
+}
+
+.silver-text {
+  color: #c0c0c0; /* Silver color */
+}
+
+.bronze-text {
+  color: #cd7f32; /* Bronze color */
+}
+
+.room-details h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
+  color: #CCCCCC; /* Light gray color for other text */
 }
 
 .room-details p {
   font-size: 1em;
-  color: #666;
+  color: #CCCCCC; /* Light gray color */
   line-height: 1.6;
 }
-
 
 
 /* Travel Convenience Section */
@@ -157,7 +166,6 @@
 .travel-convenience h3 {
   font-size: 1.5em;
   margin-bottom: 30px;
-  color: black;
 }
 
 /* Travel Card Container */
@@ -261,7 +269,6 @@
   margin-top: 1rem; /* Reduced margin for better spacing */
 }
 
-
 /* Components/Story.css */
 .story-container {
   max-width: 800px;
@@ -271,12 +278,13 @@
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: justify;
-  font-family: Arial, sans-serif;
+  font-family: 'Alike', serif;
   line-height: 1.6;
 }
 
 .story-container h1 {
   text-align: center;
+  padding: 2rem;
 }
 
 /* Components/Story.css */
@@ -288,35 +296,51 @@
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: justify;
-  font-family: Arial, sans-serif;
+  font-family: 'Alike', serif;
   line-height: 1.6;
 }
 
 .sustain-container h1 {
   text-align: center;
+  padding: 2rem;
+  color:#edb11a;
 }
 
+.page-container {
+  position: relative;
+  min-height: 100vh; /* Ensure the page takes at least the full viewport height */
+  overflow: hidden; /* Prevents scrollbars from appearing unnecessarily */
+}
+
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* Ensures the map appears above other content */
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh; /* Ensures the page takes at least the full viewport height */
+}
+
+.map-container {
+  position: relative;
+  margin-bottom: 20px; /* Adjust as needed to create space between map and footer */
+}
 
 .maps {
-  width: 75rem;
-  height: 25rem;
-  position: relative;
-  margin-top:20rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  border: 1px solid #ddd;
   border-radius: 15px;
 }
 
-
-/* Footer Styling */
 .footer {
-  background-color: #333;
-  color: white;
-  padding: 20px 0;
-  margin-top: 20px;
-}
-
-.footer .container {
+  background-color: #453636;
+  color: #ffffff;
+  padding: 20px;
   text-align: center;
 }
+

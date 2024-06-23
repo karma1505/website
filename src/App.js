@@ -6,6 +6,7 @@ import Travel from './Components/Travel';
 import Rooms from './Components/Rooms';
 import Story from './Components/Story';
 import Sustain from './Components/Sustain';
+import Footer from './Components/Footer';
 import { faPlaneDeparture, faCar, faRoad, faTrain } from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Element } from 'react-scroll'; // Import Element from react-scroll for defining scrollable sections
@@ -35,6 +36,10 @@ function App() {
       
       <Element name="sustain" className="element">
         <Sustain />
+      </Element>
+
+      <Element name="footer" className="footer">
+        <Footer />
       </Element>
       
     </div>
