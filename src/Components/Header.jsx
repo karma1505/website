@@ -7,33 +7,23 @@ const Header = () => {
     <nav className="navbar fixed-top">  
       <div className="container">
         <img src={logo} alt="logo" className="logo" />
-        <ul className="nav-links">  
-          <li>
-            <Link to="top" smooth={true} duration={500} className="nav-link">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="rooms" smooth={true} duration={500} offset={-50} className="nav-link">
-              Rooms
-            </Link>
-          </li>
-          <li>
-            <Link to="story" smooth={true} duration={500} offset={-50} className="nav-link">
-              Our Story
-            </Link>
-          </li>
-          <li>
-            <Link to="sustain" smooth={true} duration={500} offset={-50} className="nav-link">
-              Sustainability
-            </Link>
-          </li>
-          <li>
-            <Link to="contact" smooth={true} duration={1000} className="nav-link">
-              Contact
-            </Link>
-          </li>
-        </ul>
+        <div className="nav-buttons"> {/* Changed ul to div */}
+          <Link to="top" smooth={true} duration={500} className="nav-button">
+            <button className="nav-button">Home</button>
+          </Link>
+          <Link to="rooms" smooth={true} duration={500} offset={-50} className="nav-button">
+            <button className="nav-button">Rooms</button>
+          </Link>
+          <Link to="story" smooth={true} duration={500} offset={-50} className="nav-button">
+            <button className="nav-button">Our Story</button>
+          </Link>
+          <Link to="sustain" smooth={true} duration={500} offset={-50} className="nav-button">
+            <button className="nav-button">Sustainability</button>
+          </Link>
+          <Link to="contact" smooth={true} duration={1000} className="nav-button">
+            <button className="nav-button">Contact</button>
+          </Link>
+        </div>
       </div>
     </nav>
   );

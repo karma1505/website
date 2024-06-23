@@ -5,6 +5,7 @@
   font-family: 'Alike', serif;
   font-weight: 500;
   background-color: #f9e5a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .navbar {
@@ -16,8 +17,34 @@
   z-index: 100;
   padding: 1rem 1rem;
   display: flex;
-  /* Aligns items to the right */
+  justify-content: space-between; /* Adjusted alignment */
+  align-items: center; /* Vertically center align items */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
 }
+
+
+.nav-buttons {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  align-items: center; /* Vertically center align items */
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-left: 1px; /* Adjust spacing between buttons */
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  color: #BF9B78; /* Change color on hover */
+}
+
 
 .logo {
   width: 200px;
@@ -40,7 +67,7 @@
 
 .nav-link {
   color: #000;
-  font-size: 16px;
+  font-size: 15px;
   margin-left: 1rem;
   text-decoration: none;
   transition: color 0.3s ease; /* Smooth transition for hover effect */
@@ -303,7 +330,6 @@
 .sustain-container h1 {
   text-align: center;
   padding: 2rem;
-  color:#edb11a;
 }
 
 .page-container {
@@ -312,17 +338,10 @@
   overflow: hidden; /* Prevents scrollbars from appearing unnecessarily */
 }
 
-.map-container {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1; /* Ensures the map appears above other content */
-}
 
 .page-container {
   position: relative;
-  min-height: 100vh; /* Ensures the page takes at least the full viewport height */
+  min-height: 5vh; /* Ensures the page takes at least the full viewport height */
 }
 
 .map-container {

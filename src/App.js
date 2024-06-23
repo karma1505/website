@@ -10,6 +10,7 @@ import Footer from './Components/Footer';
 import { faPlaneDeparture, faCar, faRoad, faTrain } from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Element } from 'react-scroll'; // Import Element from react-scroll for defining scrollable sections
+import Maps from './Components/Maps';
 
 function App() {
   return (
@@ -36,6 +37,10 @@ function App() {
       
       <Element name="sustain" className="element">
         <Sustain />
+      </Element>
+      
+      <Element name="maps" className="maps">
+        <Maps />
       </Element>
 
       <Element name="footer" className="footer">
