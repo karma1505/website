@@ -7,7 +7,6 @@
   background-color: #f9e5a;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
 .navbar {
   background-color: #fff;
   position: fixed;
@@ -22,11 +21,11 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
 }
 
-
 .nav-buttons {
   display: flex;
-  justify-content: flex-end; /* Align buttons to the right */
+  justify-content: center; /* Center align buttons */
   align-items: center; /* Vertically center align items */
+  flex-grow: 1; /* Take up remaining space */
 }
 
 .nav-button {
@@ -36,15 +35,18 @@
   font-weight: bold;
   color: #333;
   cursor: pointer;
-  padding: 10px 20px;
-  margin-left: 1px; /* Adjust spacing between buttons */
+  padding: 10px 10px; /* Reduced padding to decrease space */
+  margin-left: 0.5rem; /* Adjust spacing between buttons */
   transition: all 0.3s ease;
+}
+
+.nav-button:first-child {
+  margin-left: 0; /* Remove margin from the first button */
 }
 
 .nav-button:hover {
   color: #BF9B78; /* Change color on hover */
 }
-
 
 .logo {
   width: 200px;
@@ -60,9 +62,7 @@
   list-style: none;
   margin: 0;
   padding: 1.2rem; /* Adjust padding as per design */
-  flex-grow: 1; /* Takes up remaining space */
-  justify-content: flex;
-  margin-left: 26rem; /* Aligns items to the right */
+  justify-content: flex-end; /* Align items to the right */
 }
 
 .nav-link {
@@ -76,6 +76,7 @@
 .nav-link:hover {
   color: #333;
 }
+
 
 .heading {
   font-size: 3rem;
@@ -133,7 +134,7 @@
   border: 1px solid #ddd;
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  background-color: #453636;
+  background-color: #fffffF;
 }
 
 .room-card:nth-child(even) {
@@ -168,12 +169,12 @@
 .room-details h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
-  color: #CCCCCC; /* Light gray color for other text */
+  color: #000000;
 }
 
 .room-details p {
   font-size: 1em;
-  color: #CCCCCC; /* Light gray color */
+  color: #000000; 
   line-height: 1.6;
 }
 
@@ -332,34 +333,35 @@
   padding: 2rem;
 }
 
-.page-container {
-  position: relative;
-  min-height: 100vh; /* Ensure the page takes at least the full viewport height */
-  overflow: hidden; /* Prevents scrollbars from appearing unnecessarily */
-}
 
-
-.page-container {
-  position: relative;
-  min-height: 5vh; /* Ensures the page takes at least the full viewport height */
-}
-
-.map-container {
-  position: relative;
-  margin-bottom: 20px; /* Adjust as needed to create space between map and footer */
+.maps-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13rem; /* Adjust as needed to center the map vertically within the viewport */
 }
 
 .maps {
-  width: 100%; /* Adjust width as needed */
-  height: 400px; /* Adjust height as needed */
-  border: 1px solid #ddd;
+  width: 70rem; 
+  height: 25rem;
   border-radius: 15px;
+  margin-left: 16.2rem;
+  margin-bottom: 10rem;
 }
+
+.maps-find {
+  font-family: "Poppins";
+  position: absolute;
+  margin-bottom: 45rem;
+  margin-left: 17rem;
+}
+
 
 .footer {
   background-color: #453636;
   color: #ffffff;
   padding: 20px;
   text-align: center;
+  height: 20vh;
 }
 

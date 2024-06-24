@@ -20,7 +20,7 @@ const Header = () => {
           <Link to="sustain" smooth={true} duration={500} offset={-50} className="nav-button">
             <button className="nav-button">Sustainability</button>
           </Link>
-          <Link to="contact" smooth={true} duration={1000} className="nav-button">
+          <Link to="contact" smooth={true} duration={1000} offset={-50} className="nav-button">
             <button className="nav-button">Contact</button>
           </Link>
         </div>

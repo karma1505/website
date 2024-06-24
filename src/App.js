@@ -43,7 +43,7 @@ function App() {
         <Maps />
       </Element>
 
-      <Element name="footer" className="footer">
+      <Element name="contact" className="contact">
         <Footer />
       </Element>
       
@@ -60,6 +60,7 @@ function TravelConvenience() {
   const carPoints = [
     "5 hours from Delhi NCR",
     "2 hours away from Shimla",
+    "2 hours from Chail",
     "1 hour from Chandigarh",
     "30 minutes from Kasauli",
     "30 minutes from Solan"
