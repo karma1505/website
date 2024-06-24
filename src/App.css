@@ -326,6 +326,7 @@
   text-align: justify;
   font-family: 'Alike', serif;
   line-height: 1.6;
+  margin-top: 4rem;
 }
 
 .sustain-container h1 {
@@ -350,18 +351,46 @@
 }
 
 .maps-find {
-  font-family: "Poppins";
+  font-family: "Alike",serif;
   position: absolute;
   margin-bottom: 45rem;
   margin-left: 17rem;
 }
 
 
-.footer {
-  background-color: #453636;
-  color: #ffffff;
-  padding: 20px;
-  text-align: center;
-  height: 20vh;
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+.footer {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
+  border-top: 1px solid #dee2e6;
+}
+
+.footer-container p {
+  margin: 0.5rem 0;
+}
+
+.footer-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+.instalogo{
+  height: 25px;
+  width: 25px;
+}
+
+.social-para{
+  position: absolute;
+  margin-left: 3rem;
+}
