@@ -18,8 +18,8 @@ function ImageGallery() {
   };
 
   return (
-    <Carousel className="custom-carousel" ref={carouselRef} interval={2000}>
-      <Carousel.Item>
+    <Carousel className="custom-carousel" ref={carouselRef}>
+      <Carousel.Item interval={null}>
         <video
           className="d-block w-100"
           src={videovilla}
@@ -29,7 +29,7 @@ function ImageGallery() {
           onEnded={handleVideoEnded}
         />
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={2000}>
         <img
           className="d-block w-100"
           src={nameplate1}
@@ -40,7 +40,7 @@ function ImageGallery() {
           <p className='carouselpara'>Welcome To The Dilli House</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={2000}>
         <img
           className="d-block w-100"
           src={downstairs}
@@ -51,7 +51,7 @@ function ImageGallery() {
           <p className='carouselpara'>Try Your Hand At Poetry Or Painting</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={2000}>
         <img
           className="d-block w-100"
           src={droneshoot}
@@ -62,7 +62,7 @@ function ImageGallery() {
           <p className='carouselpara'>Perfect For Your Socials</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={2000}>
         <img
           className="d-block w-100"
           src={kitchen}
@@ -73,7 +73,7 @@ function ImageGallery() {
           <p className='carouselpara'>With Ranging From Over 7 Different Cuisine Styles</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={2000}>
         <img
           className="d-block w-100"
           src={pool}

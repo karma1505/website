@@ -1,14 +1,13 @@
-/* General Styling */
 .App {
   text-align: center;
-  background-color: white;
+  background: linear-gradient(to bottom, #ffffff, #E1F4F3);
   font-family: 'Alike', serif;
   font-weight: 500;
-  background-color: #f9e5a;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 .navbar {
-  background-color: #fff;
+  background-color: #fffffF;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,9 +15,9 @@
   z-index: 100;
   padding: 1rem 1rem;
   display: flex;
-  justify-content: space-between; /* Adjusted alignment */
-  align-items: center; /* Vertically center align items */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
+  justify-content: space-between;
+  align-items: center; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
 }
 
 .nav-buttons {
@@ -134,7 +133,7 @@
   border: 1px solid #ddd;
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  background-color: #fffffF;
+  background-color: #706C61;
 }
 
 .room-card:nth-child(even) {
@@ -169,12 +168,12 @@
 .room-details h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .room-details p {
   font-size: 1em;
-  color: #000000; 
+  color: #ffffff;
   line-height: 1.6;
 }
 
@@ -183,7 +182,6 @@
 .travel-convenience {
   text-align: center;
   padding: 40px 20px;
-  background-color: #f9f9f9;
 }
 
 .travel-convenience h2 {
@@ -366,39 +364,62 @@
 
 //FOOTER//
 .footer {
-  background-color: #f0f0f0;
   padding: 20px;
+  background-color: #333333; /* Set background color */
+  color: white; /* Ensure text is readable */
 }
 
 .footer-container {
   max-width: 1200px;
-  margin: 0;
+  margin-left: 5rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 550;
 }
 
 .left-content {
   display: flex;
-  justify-content: left;
-}
-
-.center-content {
-  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
 }
 
 .social-para {
   font-size: 32px;
-  margin-left: 5rem;
+  margin-bottom: 0.5rem;
 }
 
-.instalogo {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  margin-top: 2.5rem;
-  margin: 0;
+.social-icons {
+  display: flex;
+  gap: 1rem; /* Adjust the spacing between icons */
 }
 
+.social-logo {
+  margin-top: 0.5rem;
+  width: 30px;
+  height: 30px;
+}
 
+.center-content {
+  display: flex-end;
+  justify-content: right;
+  margin-top: 10px;
 
+}
+
+.center-content p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .center-content {
+    margin-top: 20px;
+  }
+}

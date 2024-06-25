@@ -1,20 +1,25 @@
 import React from 'react';
-import '../App.css'; // Import your CSS file for styling
+import "../App.css"; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import instalogo from '../Media/instalogo.svg';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" style={{ backgroundColor: '#706C61', color:'white' }}>
       <div className="footer-container">
         <div className="left-content">
           <p className="social-para">
             Follow Us 
           </p>
-          <a href="https://instagram.com/dillihouse_dharampur/" target="_blank" rel="noopener noreferrer">
-              <img src={instalogo} alt="instalogo" className="instalogo" />
-          </a>
+          <div className="social-icons">
+            <a href="https://instagram.com/dillihouse_dharampur/" target="_blank" rel="noopener noreferrer">
+              <img src={instalogo} alt="Instagram" className="social-logo" />
+            </a>
+            <a href="https://instagram.com/dillihouse_dharampur/" target="_blank" rel="noopener noreferrer">
+              <img src={instalogo} alt="Facebook" className="social-logo" />
+            </a>
+          </div>
         </div>
         <div className="center-content">
           <p>&copy; 2024 Dilli House. All rights reserved.</p>
