@@ -166,13 +166,13 @@
 }
 
 .room-details h2 {
-  font-size: 1.5em;
+  font-size: 2 em;
   margin-bottom: 10px;
   color: #ffffff;
 }
 
 .room-details p {
-  font-size: 1em;
+  font-size: 21px;
   color: #ffffff;
   line-height: 1.6;
 }
@@ -364,14 +364,14 @@
 
 //FOOTER//
 .footer {
-  padding: 20px;
-  background-color: #333333; /* Set background color */
+  padding: 20px;/* Optional gradient */
+  background-color: #706C61; /* Fallback color */
   color: white; /* Ensure text is readable */
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin-left: 5rem;
+  max-width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -385,6 +385,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: left;
+  margin-left: 7rem;
 }
 
 .social-para {
@@ -404,10 +405,11 @@
 }
 
 .center-content {
-  display: flex-end;
-  justify-content: right;
-  margin-top: 10px;
-
+  display: flex; /* Ensure flexbox is applied */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Align items to the right */
+  text-align: center; /* Align text to the right */
+  margin-right: 5rem; /* Add margin to the right */
 }
 
 .center-content p {
@@ -417,9 +419,13 @@
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
+    align-items: center;
   }
 
   .center-content {
+    align-items: center; /* Center align for smaller screens */
+    text-align: center; /* Center text for smaller screens */
+    margin-right: 0; /* Remove right margin for smaller screens */
     margin-top: 20px;
   }
 }
