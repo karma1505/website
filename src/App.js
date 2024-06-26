@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './Components/Header';
 import ImageGallery from './Components/ImageGallery';
@@ -9,14 +10,15 @@ import Sustain from './Components/Sustain';
 import Footer from './Components/Footer';
 import { faPlaneDeparture, faCar, faRoad, faTrain } from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Element } from 'react-scroll'; // Import Element from react-scroll for defining scrollable sections
+import { Element } from 'react-scroll';
 import Maps from './Components/Maps';
+import Golden from './Components/Golden';
+import Silver from './Components/Silver';
+import Bronze from './Components/Bronze';
 
-function App() {
+function MainContent() {
   return (
-    <div className="App">
-      <Header />
-      
+    <>
       <Element name="top" className="element">
         <ImageGallery />
         <h1 className="heading">DILLI HOUSE</h1>
@@ -46,8 +48,7 @@ function App() {
       <Element name="contact" className="contact">
         <Footer />
       </Element>
-      
-    </div>
+    </>
   );
 }
 
@@ -101,6 +102,22 @@ function TravelConvenience() {
         />
       </div>
     </section>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<MainContent />} />
+          <Route path="/golden" element={<Golden />} />
+          <Route path="/silver" element={<Silver />} />
+          <Route path="/bronze" element={<Bronze />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

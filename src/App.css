@@ -119,8 +119,9 @@
   }
 }
 
+
 .rooms-section {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   padding: 30px;
 }
@@ -135,6 +136,8 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   background-color: #706C61;
 }
+
+
 
 .room-card:nth-child(even) {
   flex-direction: row-reverse;
@@ -166,32 +169,49 @@
 }
 
 .room-details h2 {
-  font-size: 2 em;
+  font-size: 1 em;
   margin-bottom: 10px;
   color: #ffffff;
 }
 
 .room-details p {
-  font-size: 21px;
+  font-size: 19px;
   color: #ffffff;
   line-height: 1.6;
 }
 
-
-/* Travel Convenience Section */
-.travel-convenience {
-  text-align: center;
-  padding: 40px 20px;
+.suite-page {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.travel-convenience h2 {
-  font-size: 2em;
+.suite-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
   margin-bottom: 20px;
 }
 
-.travel-convenience h3 {
-  font-size: 1.5em;
-  margin-bottom: 30px;
+.suite-details {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.suite-details p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.room-card a {
+  text-decoration: none; /* Remove the underline */
+  color: inherit; /* Inherit the color from parent element */
 }
 
 /* Travel Card Container */
