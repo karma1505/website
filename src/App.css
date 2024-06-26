@@ -435,7 +435,9 @@
 .center-content p {
   margin: 5px 0;
 }
-
+.mail{
+  color:white;
+}
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
