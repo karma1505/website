@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background: linear-gradient(to bottom, #ffffff, #E1F4F3);
+  background-color: white;
   font-family: 'Alike', serif;
   font-weight: 500;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -119,6 +119,11 @@
   }
 }
 
+.room-card a {
+  text-decoration: none; /* Remove the underline */
+  color: inherit; /* Inherit the color from parent element */
+}
+
 
 .rooms-section {
   width: 60%;
@@ -137,12 +142,9 @@
   background-color: #706C61;
 }
 
-
-
 .room-card:nth-child(even) {
   flex-direction: row-reverse;
 }
-
 .room-card img {
   width: 50%;
   height: auto;
@@ -209,10 +211,6 @@
   line-height: 1.6;
 }
 
-.room-card a {
-  text-decoration: none; /* Remove the underline */
-  color: inherit; /* Inherit the color from parent element */
-}
 
 /* Travel Card Container */
 .travel-card-container {
@@ -263,124 +261,10 @@
 }
 
 /* Image Gallery Styling */
-.custom-carousel {
-  position: relative; /* Changed to relative to keep it within the normal flow */
-  display: flex;
-  flex-direction: column;
-  margin-top: 4.5rem; /* Ensures items are stacked vertically */
-}
 
-.image-gallery {
-  padding: 40px 20px;
-  background-color: #f4f4f4;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.custom-carousel .carousel-item {
-  transition: opacity 1s ease-in-out;
-}
-
-.custom-carousel .carousel-item video,
-.custom-carousel .carousel-item img {
-  max-width: 100%; /* Limits the maximum width */
-  max-height: 720px; /* Limits the maximum height */
-  width: auto; /* Ensures aspect ratio is maintained */
-  height: auto; /* Ensures aspect ratio is maintained */
-  object-fit: cover; /* Cover the entire container */
-  display: block; /* Ensures proper display as block elements */
-  margin: 0 auto;
-}
-
-.custom-carousel .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  position: absolute; 
-  bottom: 20px; /* Changed to add some space from the bottom */
-  padding: 1rem;
-  color: white;
-  left: 0;
-  right: 0;
-  max-width: 40%; /* Ensure it doesn't span the entire width */
-  margin: 0 auto; /* Center align the caption */
-}
-
-.custom-carousel .carousel-caption h3,
-.custom-carousel .carousel-caption p {
-  margin: 0; 
-}
-
-.carouselpara {
-  font-size: 1em;
-  margin-top: 1rem; /* Reduced margin for better spacing */
-}
 
 /* Components/Story.css */
-.story-container {
-  max-width: 800px;
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: justify;
-  font-family: 'Alike', serif;
-  line-height: 1.6;
-}
 
-.story-container h1 {
-  text-align: center;
-  padding: 2rem;
-}
-
-/* Components/Story.css */
-.sustain-container {
-  max-width: 800px;
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: justify;
-  font-family: 'Alike', serif;
-  line-height: 1.6;
-  margin-top: 4rem;
-}
-
-.sustain-container h1 {
-  text-align: center;
-  padding: 2rem;
-}
-
-
-.maps-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 13rem; /* Adjust as needed to center the map vertically within the viewport */
-}
-
-.maps {
-  width: 70rem; 
-  height: 25rem;
-  border-radius: 15px;
-  margin-left: 16.2rem;
-  margin-bottom: 5rem;
-}
-
-.maps-find {
-  font-family: "Alike",serif;
-  position: absolute;
-  margin-bottom: 45rem;
-  margin-left: 17rem;
-}
-
-
-.page-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 30vh;
-}
 
 //FOOTER//
 .footer {
