@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="left-content">
           <p className="social-para">
-            Follow Us 
+            Connect With Us 
           </p>
           <div className="social-icons">
             <a href="https://instagram.com/dillihouse_dharampur/" target="_blank" rel="noopener noreferrer">

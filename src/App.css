@@ -122,30 +122,87 @@
 .suite-page {
   width: 80%;
   margin: 0 auto;
-  padding: 30px;
-  background-color: #f4f4f4;
-  border-radius: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .suite-image {
   width: 100%;
   height: auto;
-  border-radius: 15px;
   margin-bottom: 20px;
+  border-radius: 20px;
 }
 
-.suite-details {
+.suite-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.amenity-images {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+.amenity-image {
+  width: 80%;
+  height: auto;
+  border-radius: 15px;
+
+}
+.amenities-heading {
+  margin-top: 5rem;
+}
+.amenity-details {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Ensure alignment to the left */
   padding: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.suite-details p {
+.amenity-item {
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.amenity-item:hover {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.amenity-item h1,
+.amenity-item p {
+  text-align: left; /* Ensure text alignment to the left */
+}
+
+.room-description {
+  text-align: center;
+  margin-bottom: 5rem;
   font-size: 18px;
-  color: #333;
-  line-height: 1.6;
+}
+
+.additional-amenities {
+  padding: 1rem;
+  margin-bottom: 2rem; /* Adjust the value as needed */
+  text-align: center;
+}
+
+.additional-amenities h2 {
+  margin-bottom: 10px;
+}
+
+.additional-amenities ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.additional-amenities li {
+  margin-bottom: 0.5rem; /* Space between items */
 }
 
 

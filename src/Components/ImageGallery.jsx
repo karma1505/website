@@ -6,7 +6,7 @@ import nameplate1 from '../Media/nameplate.JPG';
 import droneshoot from '../Media/droneshot.JPG';
 import downstairs from '../Media/downstairs.JPG';
 import videovilla from '../Media/videovilla.mp4';
-import "../App.css"; // Import the CSS file
+import "../App.css";
 
 const ImageGallery = () => {
   const carouselRef = useRef(null);
@@ -28,12 +28,12 @@ const ImageGallery = () => {
     maxWidth: '40%', 
     margin: '0 auto', 
     zIndex: 2,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Add background for better readability
+    fontSize: '18px', 
   };
-
+  
   const paraStyle = {
     fontSize: '1em',
-    marginTop: '0.5rem', // Adjusted margin for better spacing
+    marginTop: '0.5rem', 
   };
 
   return (
@@ -62,7 +62,7 @@ const ImageGallery = () => {
         </div>
         <Carousel.Caption style={captionStyle}>
           <h3>Breathtaking Views</h3>
-          <p style={paraStyle}>Perfect For Your Socials</p>
+          <p style={paraStyle}>Perfect For Your Social Profiles</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={2000}>
@@ -71,7 +71,7 @@ const ImageGallery = () => {
         </div>
         <Carousel.Caption style={captionStyle}>
           <h3>Dine At The Royal Kitchen Of Dilli House</h3>
-          <p style={paraStyle}>With Ranging From Over 7 Different Cuisine Styles</p>
+          <p style={paraStyle}>With Ranging From Over 5 Different Cuisine Styles</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={2000}>
@@ -80,7 +80,7 @@ const ImageGallery = () => {
         </div>
         <Carousel.Caption style={captionStyle}>
           <h3>Evening Pool View</h3>
-          <p style={paraStyle}>Experience the serene ambiance of our pool at the golden hour.</p>
+          <p style={paraStyle}>Experience The Serene Ambiance Of Our Pool At The Golden Hour.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={null}>
