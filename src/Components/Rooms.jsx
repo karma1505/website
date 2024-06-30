@@ -6,7 +6,7 @@ import bronzeImg from '../Media/bronze.jpg';
 
 const roomStyles = {
   section: {
-    width: '60%',
+    width: '80%',
     margin: '0 auto',
     padding: '30px',
   },
@@ -35,6 +35,7 @@ const roomStyles = {
   details: {
     width: '50%',
     padding: '20px',
+    textAlign: 'left',
   },
   textColors: {
     golden: { color: '#ffd700' },
@@ -42,7 +43,7 @@ const roomStyles = {
     bronze: { color: '#cd7f32' },
   },
   h1: {
-    fontSize: '1em',
+    fontSize: '2em',
     marginBottom: '10px',
     color: '#ffffff',
   },
@@ -55,7 +56,7 @@ const roomStyles = {
 
 const Rooms = () => (
   <div style={roomStyles.section}>
-    <h2>Our Rooms</h2>
+    <h2 style={{ textAlign: 'center', color: '#ffffff' }}>Our Rooms</h2>
 
     {[
       {
@@ -83,17 +84,15 @@ const Rooms = () => (
         style: roomStyles.textColors.bronze,
       },
     ].map(({ to, imgSrc, alt, title, text, style }, index) => (
-      <div key={index} style={{ ...roomStyles.card, ...(index % 2 === 1 ? roomStyles.cardEven : {}) }}>
-        <Link to={to} style={{ textDecoration: 'none', color: 'inherit' }}>
-          <img src={imgSrc} alt={alt} style={roomStyles.img} />
-          <div style={roomStyles.details}>
-            <h1 style={roomStyles.h1}>
-              The <span style={style}>{title}</span> Bedroom
-            </h1>
-            <p style={roomStyles.p}>{text}</p>
-          </div>
-        </Link>
-      </div>
+      <Link to={to} key={index} style={{ ...roomStyles.card, ...(index % 2 === 1 ? roomStyles.cardEven : {}) }}>
+        <img src={imgSrc} alt={alt} style={roomStyles.img} />
+        <div style={roomStyles.details}>
+          <h1 style={roomStyles.h1}>
+            The <span style={style}>{title}</span> Bedroom
+          </h1>
+          <p style={roomStyles.p}>{text}</p>
+        </div>
+      </Link>
     ))}
   </div>
 );
