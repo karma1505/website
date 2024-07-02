@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import instalogo from '../Media/instalogo.svg';
 import facebooklogo from '../Media/facebooklogo.svg';
-import makemytriplogo from '../Media/mmtlogo.svg';
+import makemytriplogo from '../Media/mmtlogo.svg'; // Import MakeMyTrip logo
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" style={{ backgroundColor: '#706C61', color: 'white' }}>
       <div className="footer-container">
         <div className="left-content">
           <p className="social-para">
