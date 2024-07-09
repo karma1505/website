@@ -319,16 +319,19 @@ footer.footer {
 
 .social-para {
   font-size: 3vh;
-  margin-bottom: 6vh;
+  padding: 2vh;
+  margin-top:2vh;
 }
 
 .social-icons {
   display: flex;
   gap: 2vh;
+  margin-bottom: 3vh;
+  margin-left: 4vw;
 }
 
 .social-logo {
-  margin-top: 1vh;
+  margin-bottom: 1vh;
   width: 4vh;
   height: 4vh;
 }
@@ -370,7 +373,7 @@ footer.footer {
 .makemytrip-logo {
   width: 7vh;
   height: 7vh;
-  margin-right: 2.5vw;
+  margin-right: 4vw;
   border-radius: 30px;
 }
 
