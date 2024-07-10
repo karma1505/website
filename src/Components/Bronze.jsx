@@ -4,7 +4,7 @@ import scb from '../Media/scb.jpg';
 import bronze3 from '../Media/bronze3.JPG';
 import otto from '../Media/otto.jpg';
 import Footer from './Footer'; 
-import '../App.css';
+import "../App.css";
 
 const amenities = [
   { id: 1, title: 'Sofa-Cum-Bed', description: 'Perfect For Accomodating Upto 2 More Guests And Have A Slumber Party', image: scb },

@@ -4,7 +4,7 @@ import golden2 from '../Media/golden2.jpg';
 import goldenjacuzzi from '../Media/goldenjacuzzi.JPG';
 import goldenpool from '../Media/goldenpool.JPG';
 import Footer from './Footer'; // Import the Footer component
-import '../App.css';
+import "../App.css";
 
 const amenities = [
   { id: 1, title: 'Luxurious Bed', description: 'Experience the comfort of our king-sized bed with premium linens.', image: golden2 },

@@ -4,7 +4,7 @@ import silver2 from '../Media/silver2.jpg';
 import silver3 from '../Media/silver3.jpg';
 import recliner from '../Media/recliner.jpg';
 import Footer from './Footer'; 
-import '../App.css';
+import "../App.css";
 
 const amenities = [
   { id: 1, title: 'Panoramic Views', description: 'Experience the panoramic views from this room overlooking the green valleys.', image: silver2 },
