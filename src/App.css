@@ -7,80 +7,111 @@
 }
 
 .navbar {
-  background-color: #fffffF;
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
-  padding: 1rem 1rem;
+  padding: 1vh 1vw;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+  align-items: center;
+  box-shadow: 0 0.2vh 0.4vh rgba(0, 0, 0, 0.3);
 }
 
 .nav-buttons {
   display: flex;
-  justify-content: center; /* Center align buttons */
-  align-items: center; /* Vertically center align items */
-  flex-grow: 1; /* Take up remaining space */
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .nav-button {
   background: none;
   border: none;
-  font-size: 15px;
+  font-size: 1.5vh;
   font-weight: bold;
   color: #333;
   cursor: pointer;
-  padding: 10px 10px; /* Reduced padding to decrease space */
-  margin-left: 0.5rem; /* Adjust spacing between buttons */
+  padding: 1vh 1vw;
+  margin-left: 0.5vw;
   transition: all 0.3s ease;
 }
 
 .nav-button:first-child {
-  margin-left: 0; /* Remove margin from the first button */
+  margin-left: 0;
 }
 
 .nav-button:hover {
-  color: #BF9B78; /* Change color on hover */
+  color: #BF9B78;
 }
 
 .logo {
-  width: 200px;
-  height: 80px;
-  position: absolute;
-  left: 1rem;
-  top: 50%; /* Adjust as necessary */
-  transform: translateY(-50%);
+  width: 4vw;
+  height: auto;
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 1.2rem; /* Adjust padding as per design */
-  justify-content: flex-end; /* Align items to the right */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 1vh;
 }
 
-.nav-link {
-  color: #000;
-  font-size: 15px;
-  margin-left: 1rem;
-  text-decoration: none;
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
+.burger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
 }
 
-.nav-link:hover {
-  color: #333;
+@media (max-width: 768px) {
+  .burger-menu {
+    display: flex;
+  }
+
+  .logo {
+    width: 15vw; /* Make the logo larger for better visibility */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    transition: max-height 0.3s ease;
+    max-height: 0; /* Initially collapsed */
+    overflow: hidden;
+  }
+
+  .nav-buttons.open {
+    max-height: 600px; /* Adjust based on your content height */
+  }
+
+  .nav-button {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .custom-carousel {
+    margin-top: 7.5vh;
+  }
 }
+
+
 
 
 .heading {
   font-size: 3rem;
   margin-top: 2.5rem;
-  animation: easeInHeading 1s ease-in;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Slide down effect */
   font-family: 'Alike', serif;
   font-weight: 400;
   font-style: normal;
@@ -90,30 +121,31 @@
   font-size: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  opacity: 0;
-  animation: easeInSubheading 1s ease-in 1s forwards;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Slide up effect */
   font-family: 'Alike', serif;
   font-weight: 400;
   font-style: normal;
 }
 
+
 @keyframes easeInHeading {
-  from {
+  0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(-40px); /* Optional: Slide in from top */
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
 @keyframes easeInSubheading {
-  from {
+  0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(-50px); /* Optional: Slide in from bottom */
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -260,6 +292,7 @@
   max-height: 85vh;
   padding-bottom: 56.25%; /* 16:9 aspect ratio (for a different ratio, adjust accordingly) */
   position: relative;
+  margin-top: 9vh;
 }
 
 .custom-carousel .carousel-item {
