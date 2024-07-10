@@ -32,9 +32,9 @@ const Footer = () => {
         </div>
 
         <div className="right-content">
-          <p className="book-stay-para">
+          <a className="book-stay-para" href="https://www.makemytrip.com/hotels/dilli_villa_3bhk_swimming_pool_jacuzzi_and_home_theatre-details-kasauli.html">
             Book Your Stay
-          </p>
+          </a>
           <div className="book-stay">
             <a href="https://www.makemytrip.com/hotels/dilli_villa_3bhk_swimming_pool_jacuzzi_and_home_theatre-details-kasauli.html" target="_blank" rel="noopener noreferrer">
               <img src={makemytriplogo} alt="MakeMyTrip" className="makemytrip-logo" />

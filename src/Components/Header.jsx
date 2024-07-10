@@ -24,6 +24,9 @@ const Header = () => {
           <ScrollLink to="contact" smooth={true} duration={1000} offset={-50} className="nav-button">
             <button className="nav-button">Contact</button>
           </ScrollLink>
+          <ScrollLink to="contact" smooth={true} duration={1000} offset={-50} className="nav-button">
+            <button className="nav-button">Book Your Stay</button>
+          </ScrollLink>
         </div>
       </div>
     </nav>
