@@ -5,6 +5,7 @@ import kitchen from '../Media/kitchen.JPG';
 import nameplate1 from '../Media/nameplate.JPG';
 import droneshoot from '../Media/droneshot.JPG';
 import downstairs from '../Media/downstairs.JPG';
+import outdoor from '../Media/outdoor.jpg'
 import videovilla from '../Media/videovilla.mp4';
 import "../App.css";
 
@@ -20,27 +21,27 @@ const ImageGallery = () => {
   const captionStyle = {
     borderRadius: '5px',
     position: 'absolute',
-    bottom: '20px', 
+    bottom: '20px',
     padding: '1rem',
     color: 'white',
     left: '0',
     right: '0',
-    maxWidth: '40%', 
-    margin: '0 auto', 
+    maxWidth: '40%',
+    margin: '0 auto',
     zIndex: 2,
-    fontSize: '18px', 
+    fontSize: '18px',
   };
-  
+
   const paraStyle = {
     fontSize: '1em',
-    marginTop: '0.5rem', 
+    marginTop: '0.5rem',
   };
 
   return (
     <Carousel className="custom-carousel" ref={carouselRef}>
       <Carousel.Item interval={2000}>
         <div className="media-overlay">
-          <img className="d-block w-100" src={nameplate1} alt="The Dilli House" />
+          <img className="d-block w-100 carousel-img" src={nameplate1} alt="The Dilli House" />
         </div>
         <Carousel.Caption style={captionStyle}>
           <h3>Your Himalayan Escape</h3>
@@ -49,7 +50,7 @@ const ImageGallery = () => {
       </Carousel.Item>
       <Carousel.Item interval={2000}>
         <div className="media-overlay">
-          <img className="d-block w-100" src={downstairs} alt="The Dilli House" />
+          <img className="d-block w-100 carousel-img" src={downstairs} alt="The Dilli House" />
         </div>
         <Carousel.Caption style={captionStyle}>
           <h3>Unlock Your Creative Mind</h3>
@@ -58,7 +59,7 @@ const ImageGallery = () => {
       </Carousel.Item>
       <Carousel.Item interval={2000}>
         <div className="media-overlay">
-          <img className="d-block w-100" src={droneshoot} alt="The Dilli House" />
+          <img className="d-block w-100 carousel-img" src={droneshoot} alt="The Dilli House" />
         </div>
         <Carousel.Caption style={captionStyle}>
           <h3>Breathtaking Views</h3>
@@ -67,7 +68,7 @@ const ImageGallery = () => {
       </Carousel.Item>
       <Carousel.Item interval={2000}>
         <div className="media-overlay">
-          <img className="d-block w-100" src={kitchen} alt="The Dilli House" />
+          <img className="d-block w-100 carousel-img" src={kitchen} alt="The Dilli House" />
         </div>
         <Carousel.Caption style={captionStyle}>
           <h3>Dine At The Royal Kitchen Of Dilli House</h3>
@@ -76,17 +77,26 @@ const ImageGallery = () => {
       </Carousel.Item>
       <Carousel.Item interval={2000}>
         <div className="media-overlay">
-          <img className="d-block w-100" src={pool} alt="Evening pool view" />
+          <img className="d-block w-100 carousel-img" src={pool} alt="Evening pool view" />
         </div>
         <Carousel.Caption style={captionStyle}>
           <h3>Evening Pool View</h3>
           <p style={paraStyle}>Experience The Serene Ambiance Of Our Pool At The Golden Hour.</p>
         </Carousel.Caption>
       </Carousel.Item>
+      <Carousel.Item interval={2000}>
+        <div className="media-overlay">
+          <img className="d-block w-100 carousel-img" src={outdoor} alt="Outdoor Sitting" />
+        </div>
+        <Carousel.Caption style={captionStyle}>
+          <h3>Veranda Retreat</h3>
+          <p style={paraStyle}>Perfect for BBQ, Music, And Fun Activities.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
       <Carousel.Item interval={null}>
         <div className="media-overlay">
           <video
-            className="d-block w-100"
+            className="d-block w-100 carousel-video"
             src={videovilla}
             alt="The Dilli House Experience"
             autoPlay
