@@ -1,6 +1,5 @@
 {
-  "homepage": "https://karma1505.github.io/website/",
-  "name": "website",
+  "name": "house",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
